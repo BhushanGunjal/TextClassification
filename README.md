@@ -14,10 +14,16 @@ This repository contains a simple FastAPI-based API for performing text classifi
 ├── app
 │   ├── routes.py
 │   └── main.py
-└── model
-    ├── train.py
-    ├── predict.py
-    └── monitor.py
+├── model
+│   ├── train.py
+│   ├── predict.py
+│   ├── svm_model.pkl
+│   └── monitor.py
+├── venv
+├── .gitignore
+├── dataset.xlsx
+├── requirements.txt
+
 
 ```
 
@@ -29,6 +35,9 @@ This repository contains a simple FastAPI-based API for performing text classifi
 - **requirements.txt:** Lists the project dependencies.
 - **.gitignore:** Specifies files and folders to be ignored by Git.
 - **svm_model.pkl:**  The trained SVM model file. (Not included in the repository, generate it using `train.py`)
+- **dataset.xlsx:** The Excel file containing the training data with 'text' and 'label' columns.
+- **venv:** The virtual environment directory containing Python packages.
+- **README.md:** The main documentation file explaining the project, its structure, installation, and usage.
 
 
 ## Installation
